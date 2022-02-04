@@ -145,6 +145,131 @@ Use the href attribute (href="#value") to link to the bookmark
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Images
 
+<img src="url" alt="alternatetext">
+<img src="programming.gif" alt="Computer Man" style="width:48px;height:48px;">
 
+Image as a Link
+<a href="default.asp">
+  <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+</a>
 
+Image as a Link
+<a href="default.asp">
+  <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+</a>
+
+Image Floating
+<p><img src="smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;">
+The image will float to the right of the text.</p>
+
+Use the HTML <img> element to define an image
+Use the HTML src attribute to define the URL of the image
+Use the HTML alt attribute to define an alternate text for an image, if it cannot be displayed
+Use the HTML width and height attributes or the CSS width and height properties to define the size of the image
+Use the CSS float property to let the image float to the left or to the right
+
+Common Image Formats
+
+Abbreviation	            File Format	                        File Extension
+
+APNG	            Animated Portable Network Graphics	            .apng
+GIF	                Graphics Interchange Format	                    .gif
+ICO	                Microsoft Icon	                                .ico, .cur
+JPEG	            Joint Photographic Expert Group image	        .jpg, .jpeg, .jfif, .pjpeg, .pjp
+PNG	                Portable Network Graphics	                    .png
+SVG	                Scalable Vector Graphics	                    .svg
+
+The <picture> element contains one or more <source> elements, each referring to different images through the srcset attribute. 
+This way the browser can choose the image that best fits the current view and/or device.
+
+<picture>
+  <source media="(min-width: 650px)" srcset="img_food.jpg">
+  <source media="(min-width: 465px)" srcset="img_car.jpg">
+  <img src="img_girl.jpg">
+</picture>
+
+Always specify an <img> element as the last child element of the <picture> element. 
+The <img> element is used by browsers that do not support the <picture> element, or if none of the <source> tags match.
+
+There are two main purposes for the <picture> element i.e Bandwidth or Format Support.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Image Maps
+
+The HTML <map> tag defines an image map. An image map is an image with clickable areas. The areas are defined with one or more <area> tags.
+The usemap value starts with a hash tag # followed by the name of the image map, and is used to create a relationship between the image and the image map.
+
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap">  --Create an image
+<map name="workmap">                                         --Create an imagemap
+
+Shapes
+
+rect - defines a rectangular region
+circle - defines a circular region
+poly - defines a polygonal region
+default - defines the entire region
+
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+  <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">
+</map>
+
+Clicking on above parts will give more info of the subject where it is referenced.
+
+A clickable area can also trigger a JavaScript function.
+Add a click event to the <area> element to execute a JavaScript function.
+Example:
+<map name="workmap">
+  <area shape="circle" coords="337,300,44" href="coffee.htm" onclick="myFunction()">
+</map>
+
+<script>
+function myFunction() {
+  alert("You clicked the coffee cup!");
+}
+</script>
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Background Images
+
+<div style="background-image: url('img.jpg');">
+
+In style section
+<style>
+div {
+  background-image: url('img.jpg');
+}
+</style>
+
+Background image to entire page with no repeatation
+<style>
+body {
+  background-image: url('example_img.jpg');
+  background-repeat: no-repeat;
+}
+</style>
+
+Background Cover to fix image
+<style>
+body {
+  background-image: url('img.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+
+If you want to strech the image change the background-size with percentage like background-size: 100% 100%.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Favicon
+
+A favicon is a small image, so it should be a simple image with high contrast. It is left icon on your browser tab.It is placed inside link tag.
+<link>	Defines the relationship between a document and an external resource.
+You can use any image you like as your favicon. You can also create your own favicon on sites like https://favicon.cc
+<head>
+  <title>My Page Title</title>
+  <link rel="icon" type="x-icon" href="favicon.ico">
+</head>
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
