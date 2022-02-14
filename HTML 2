@@ -1,1 +1,74 @@
+Block and Inline Elements
+
+Block-level Elements
+A block-level element always starts on a new line, and the browsers automatically add some space (a margin) before and after the element.
+A block-level element always takes up the full width available (stretches out to the left and right as far as it can).
+Two commonly used block elements are: <p> and <div>.
+The <div> element defines a division or a section in an HTML document.
+
+Here are the block-level elements in HTML:
+<address> <article> <aside> <blockquote>  <canvas>  <dd>  <div> <dl>  <dt>  <fieldset>  <figcaption>  <figure>  <footer>  <form>  <h1>-<h6> <header>  <hr>  <li>  <main>
+<nav> <noscript>  <ol>  <p> <pre> <section> <table> <tfoot> <ul>  <video>
+
+Inline Elements
+An inline element only takes up as much width as necessary.
+An inline element cannot contain a block-level element.
+
+Here are the inline elements in HTML:
+<a> <abbr>  <acronym> <b> <bdo> <big> <br>  <button>  <cite>  <code>  <dfn> <em>  <i> <img> <input> <kbd> <label> <map> <object>  <output>  <q> <samp>  <script>  <select>
+<small> <span>  <strong>  <sub> <sup> <textarea>  <time>  <tt>  <var>.
+
+The <div> element is often used as a container for other HTML elements.
+The <div> element has no required attributes, but style, class and id are common.
+The <span> element is an inline container used to mark up a part of a text, or a part of a document.
+The <span> element has no required attributes, but style, class and id are common.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Class
+
+The class attribute is often used to point to a class name in a style sheet. 
+It can also be used by a JavaScript to access and manipulate elements with the specific class name.
+Multiple HTML elements can share the same class.
+The class attribute can be used on any HTML element.
+The class name is case sensitive.
+
+To create a class; write a period (.) character, followed by a class name. Then, define the CSS properties within curly braces {} in style section under head.
+.note {
+  font-size: 120%;
+  color: red;
+}
+<h1>My <span class="note">Important</span> Heading</h1>
+
+To define multiple classes, separate the class names with a space, e.g. <div class="city main">. The element will be styled according to all the classes specified.
+Different Elements Can Share Same Class.
+JavaScript can access elements with a specific class name with the getElementsByClassName() method.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ID
+
+The HTML id attribute is used to specify a unique id for an HTML element.
+You cannot have more than one element with the same id in an HTML document.
+The id attribute is used to point to a specific style declaration in a style sheet. It is also used by JavaScript to access and manipulate the element with the specific id.
+
+The syntax for id is: write a hash character (#), followed by an id name. Then, define the CSS properties within curly braces {} in style section.
+#myHeader {
+  background-color: lightblue;
+  color: black;
+  padding: 40px;
+  text-align: center;
+}
+<h1 id="myHeader">My Header</h1>
+
+The id name is case sensitive.
+The id name must contain at least one character, cannot start with a number, and must not contain whitespaces (spaces, tabs, etc.).
+A class name can be used by multiple HTML elements, while an id name must only be used by one HTML element within the page.
+
+Bookmarks with ID and Links
+<h2 id="C4">Chapter 4</h2>
+<a href="#C4">Jump to Chapter 4</a> (For same page)
+<a href="html_demo.html#C4">Jump to Chapter 4</a> (For another page)
+
+JavaScript can access an element with a specific id with the getElementById() method.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
 
