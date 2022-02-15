@@ -201,8 +201,93 @@ Computer Code Elements
 The content inside <code>,<kbd>,<samp> is displayed in the browser's default monospace font.
 The content inside <var> is typically displayed in italic.
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Semantic Elements
 
+A semantic element clearly describes its meaning to both the browser and the developer.
+Examples of non-semantic elements: <div> and <span> - Tells nothing about its content.
+Examples of semantic elements: <form>, <table>, and <article> - Clearly defines its content.
 
+The <section> element defines a section in a document.
+Examples of where a <section> element can be used:
+Chapters
+Introduction
+News items
+Contact information
 
+The <article> element specifies independent, self-contained content.
+Examples of where the <article> element can be used:
+Forum posts
+Blog posts
+User comments
+Product cards
+Newspaper articles
 
+The <header> element represents a container for introductory content or a set of navigational links.
+A <header> element typically contains:
+one or more heading elements (<h1> - <h6>)
+logo or icon
+authorship information
+You can have several <header> elements in one HTML document. However, <header> cannot be placed within a <footer>, <address> or another <header> element.
 
+The <footer> element defines a footer for a document or section
+A <footer> element typically contains:
+authorship information
+copyright information
+contact information
+sitemap
+back to top links
+related documents
+You can have several <footer> elements in one document.
+
+The <nav> element defines a set of navigation links.
+Notice that NOT all links of a document should be inside a <nav> element. The <nav> element is intended only for major block of navigation links.
+Browsers, such as screen readers for disabled users, can use this element to determine whether to omit the initial rendering of this content.
+
+The <figure> tag specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.
+The <figcaption> tag defines a caption for a <figure> element. The <figcaption> element can be placed as the first or as the last child of a <figure> element.
+
+Tag	                                                Description
+<article>	                            Defines independent, self-contained content
+<aside>	                              Defines content aside from the page content
+<details>	                            Defines additional details that the user can view or hide
+<figcaption>	                        Defines a caption for a <figure> element
+<figure>	                            Specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.
+<footer>	                            Defines a footer for a document or section
+<header>	                            Specifies a header for a document or section
+<main>	                              Specifies the main content of a document
+<mark>	                              Defines marked/highlighted text
+<nav>	                                Defines navigation links
+<section>	                            Defines a section in a document
+<summary>                           	Defines a visible heading for a <details> element
+<time>	                              Defines a date/time
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Entities
+
+Reserved characters in HTML must be replaced with character entities.
+If you use the less than (<) or greater than (>) signs in your text, the browser might mix them with tags.
+&entity_name; OR &#entity_number;
+To display a less than sign (<) we must write: &lt; or &#60;
+Entity names are case sensitive.
+Advantage of using an entity name: An entity name is easy to remember.
+Disadvantage of using an entity name: Browsers may not support all entity names, but the support for entity numbers is good.
+
+A non-breaking space is a space that will not break into a new line.
+If you write 10 spaces in your text, the browser will remove 9 of them. To add real spaces to your text, you can use the &nbsp; character entity.
+The non-breaking hyphen (&#8209;) is used to define a hyphen character (‑) that does not break into a new line.
+
+Result	            Description	                Entity Name	            Entity Number
+                    non-breaking space	          &nbsp;	                  &#160;
+<	                  less than	                    &lt;	                    &#60;
+>	                  greater than	                &gt;	                    &#62;
+&	                  ampersand	                    &amp;	                    &#38;
+"	                  double quotation mark	        &quot;	                  &#34;
+'	                  single quotation mark
+                        (apostrophe)	            &apos;	                  &#39;
+¢	                  cent	                        &cent;	                  &#162;
+£	                  pound	                        &pound;	                  &#163;
+¥	                  yen	                          &yen;	                    &#165;
+€	                  euro	                        &euro;	                  &#8364;
+©	                  copyright	                    &copy;	                  &#169;
+®	                  registered trademark	        &reg;	                    &#174;
+                    Indian rupee                                            &#8377;
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
