@@ -291,3 +291,118 @@ Result	            Description	                Entity Name	            Entity Nu
 ®	                  registered trademark	        &reg;	                    &#174;
                     Indian rupee                                            &#8377;
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Combining Diacritical Marks
+
+A diacritical mark is a "glyph" added to a letter.
+Some diacritical marks, like grave (  ̀) and acute (  ́) are called accents.
+
+Mark	   Character	     Construct	        Result
+   ̀	         a	           a&#768;	           à
+  ́	          a	           a&#769;	            á
+  ̂	          a          	a&#770;             	â
+   ̃	        a	          a&#771;	               ã
+  ̀	          O	          O&#768;	               Ò
+   ́	        O	          O&#769;	               Ó
+   ̂	        O	          O&#770;	               Ô
+   ̃	        O	          O&#771;	                Õ
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Symbols
+
+Mathematical
+Char	Number	Entity	Description
+∀	&#8704;	&forall;	FOR ALL	
+∂	&#8706;	&part;	PARTIAL DIFFERENTIAL	
+∃	&#8707;	&exist;	THERE EXISTS	
+∅	&#8709;	&empty;	EMPTY SETS	
+∇	&#8711;	&nabla;	NABLA	
+∈	&#8712;	&isin;	ELEMENT OF	
+∉	&#8713;	&notin;	NOT AN ELEMENT OF	
+∋	&#8715;	&ni;	CONTAINS AS MEMBER	
+∏	&#8719;	&prod;	N-ARY PRODUCT	
+∑	&#8721;	&sum;	N-ARY SUMMATION
+
+Greek Letters
+Char	Number	Entity	Description	
+Α	&#913;	&Alpha;	GREEK CAPITAL LETTER ALPHA	
+Β	&#914;	&Beta;	GREEK CAPITAL LETTER BETA	
+Γ	&#915;	&Gamma;	GREEK CAPITAL LETTER GAMMA	
+Δ	&#916;	&Delta;	GREEK CAPITAL LETTER DELTA	
+Ε	&#917;	&Epsilon;	GREEK CAPITAL LETTER EPSILON	
+Ζ	&#918;	&Zeta;	GREEK CAPITAL LETTER ZETA
+
+Some Other
+Char	Number	Entity	Description
+©	&#169;	&copy;	COPYRIGHT SIGN	
+®	&#174;	&reg;	REGISTERED SIGN	
+€	&#8364;	&euro;	EURO SIGN	
+™	&#8482;	&trade;	TRADEMARK	
+←	&#8592;	&larr;	LEFTWARDS ARROW	
+↑	&#8593;	&uarr;	UPWARDS ARROW	
+→	&#8594;	&rarr;	RIGHTWARDS ARROW	
+↓	&#8595;	&darr;	DOWNWARDS ARROW	
+♠	&#9824;	&spades;	BLACK SPADE SUIT	
+♣	&#9827;	&clubs;	BLACK CLUB SUIT	
+♥	&#9829;	&hearts;	BLACK HEART SUIT	
+♦	&#9830;	&diams;	BLACK DIAMOND SUIT
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Emojis
+
+Emojis are characters from the UTF-8 character set
+Few emoji symbols
+😀	&#128512;	
+😁	&#128513;	
+😂	&#128514;	
+😃	&#128515;	
+😄	&#128516;	
+😅	&#128517;
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+HTML Encoding (Character Sets)
+
+The complete chart for the conversion is given here  https://www.w3schools.com/html/html_charset.asp.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Uniform Resource Locators (URL)
+
+A URL is another word for a web address.
+URL Syntax
+scheme://prefix.domain:port/path/filename
+scheme - defines the type of Internet service (most common is http or https)
+prefix - defines a domain prefix (default for http is www)
+domain - defines the Internet domain name (like w3schools.com)
+port - defines the port number at the host (default for http is 80)
+path - defines a path at the server (If omitted: the root directory of the site)
+filename - defines the name of a document or resource
+
+Scheme	                              Short for	                                Used for
+http	                          HyperText Transfer Protocol	            Common web pages. Not encrypted
+https	                          Secure HyperText Transfer Protocol	    Secure web pages. Encrypted
+ftp	                            File Transfer Protocol	                Downloading or uploading files
+file	 	                                                                A file on your computer
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+XHTML
+
+XHTML stands for EXtensible HyperText Markup Language
+XHTML is a stricter, more XML-based version of HTML
+XHTML is HTML defined as an XML application
+XHTML is supported by all major browsers
+
+XHTML was developed to make HTML more extensible and flexible to work with other data formats (such as XML). 
+In addition, browsers ignore errors in HTML pages, and try to display the website even if it has some errors in the markup. 
+So XHTML comes with a much stricter error handling.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Difference between HTML and XHTML
+
+<!DOCTYPE> is mandatory
+The xmlns attribute in <html> is mandatory
+<html>, <head>, <title>, and <body> are mandatory
+Elements must always be properly nested
+Elements must always be closed
+Elements must always be in lowercase
+Attribute names must always be in lowercase
+Attribute values must always be quoted
+Attribute minimization is forbidden
+
+Closing for unclosed tags in XHTML as compared to HTML
+A break: <br />
+A horizontal rule: <hr />
+An image: <img src="happy.gif" alt="Happy face" />
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
